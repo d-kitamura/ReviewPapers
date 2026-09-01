@@ -1,0 +1,13 @@
+# Pixi environments and Python caches
+.pixi/
+*.egg-info/
+__pycache__/
+*.pyc
+
+# Generated and private review data
+*.pdf
+*.png
+*.jpg
+*.svg
+.review_root
+fixtures/dev_root/

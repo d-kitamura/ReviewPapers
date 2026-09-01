@@ -1,0 +1,17 @@
+[workspace]
+authors = ["d-kitamura"]
+channels = ["conda-forge"]
+name = "ReviewPapers"
+platforms = ["win-64", "linux-64"]
+version = "0.1.0"
+
+[tasks]
+gui = "python review_app.py"
+make-fixtures = "python fixtures/make_fixtures.py"
+test = "python -m unittest discover -s tests -v"
+
+[dependencies]
+python = ">=3.10"
+pillow = ">=10.0"
+pymupdf = ">=1.24.0,<2"
+tectonic = ">=0.17.0,<0.18"
